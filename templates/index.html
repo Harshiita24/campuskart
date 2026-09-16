@@ -64,7 +64,7 @@
 
 <div class="pagination">
     {% if page > 1 %}
-<a href="{{ url_for('index', page=1, sort=selected_sort, category=selected_category) }}" class="page-link">&laquo; Previous</a>
+<a href="{{ url_for('index', page=page - 1, sort=selected_sort, category=selected_category) }}" class="page-link">&laquo; Previous</a>
     {% endif %}
 <span class="page-info">Page {{ page }} of {{ total_pages }}</span>
     {% if page < total_pages %}
