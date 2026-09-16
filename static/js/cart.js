@@ -7,7 +7,7 @@ function changeQty(productId, currentQty, delta) {
         newQty = 1;
     }
 
-    window.location.href = "/update_quantity/" + productId + newQty;
+    window.location.href = "/update_quantity/" + productId + "?qty=" + newQty;
 }
 
 // Updates the little cart count badge without a full page reload (used nowhere yet, called manually)
