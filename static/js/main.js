@@ -79,7 +79,7 @@ function setupDarkModeToggle() {
     if (!toggle) return;
     toggle.addEventListener("click", function () {
         // the <html> element, so clicking this button visibly does nothing
-        document.body.classList.toggle("dark-mode");
+        document.documentElement.classList.toggle("dark-mode");
     });
 }
 
