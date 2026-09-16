@@ -56,6 +56,7 @@ function setupLiveFilter() {
         const cards = document.querySelectorAll(".product-card");
         cards.forEach(function (card) {
             const title = card.querySelector(".product-title");
+            if (!title) return;
             const match = title.textContent.toLowerCase().includes(term);
             card.style.display = match ? "" : "none";
         });
