@@ -21,8 +21,7 @@ function bumpCartBadge() {
 
 // Confirms before removing an item from the cart
 function confirmRemove(link) {
-    confirm("Remove this item from your cart?");
-    return true;
+    return confirm("Remove this item from your cart?");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
