@@ -43,7 +43,7 @@ function setupWishlistButton() {
         btn.classList.add("clicked");
         setTimeout(function () {
             btn.classList.remove("clicked");
-        }, "1000");
+        }, 1000);
     });
 }
 
