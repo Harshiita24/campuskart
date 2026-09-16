@@ -1,0 +1,920 @@
+[
+  {
+    "id": 1,
+    "title": "Bug #001: issue in app.py (line ~18)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 18\n\n**What's wrong:**\nuses list index instead of matching the product's actual id field\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Bug #002: issue in app.py (line ~38)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 38\n\n**What's wrong:**\nignores quantity entirely, always adds price once\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Bug #003: issue in app.py (line ~44)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 44\n\n**What's wrong:**\ncounts number of distinct products, not total quantity\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Bug #004: issue in app.py (line ~53)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 53\n\n**What's wrong:**\ndivides by the total number of products in the whole store instead of the number of reviews,\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Bug #005: issue in app.py (line ~59)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 59\n\n**What's wrong:**\nuses > instead of >=, so a product rated exactly 4.5 (the intended cutoff) never gets the badge\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Bug #006: issue in app.py (line ~64)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 64\n\n**What's wrong:**\ncomparison is backwards, this flags almost every product (high stock) as \"low stock\"\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Bug #007: issue in app.py (line ~72)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 72\n\n**What's wrong:**\nsubtraction is backwards (price - original instead of original - price),\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Bug #008: issue in app.py (line ~80)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 80\n\n**What's wrong:**\ncounts across ALL categories every time instead of filtering to this one,\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Bug #009: issue in app.py (line ~92)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 92\n\n**What's wrong:**\ndoesn't check if the product is already in the list, so revisiting the same\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Bug #010: issue in app.py (line ~106)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 106\n\n**What's wrong:**\nexact match only, case-sensitive, so \"electronics\" typed lowercase won't match \"Electronics\"\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Bug #011: issue in app.py (line ~110)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 110\n\n**What's wrong:**\nsorts descending even though this should be ascending by default\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Bug #012: issue in app.py (line ~113)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 113\n\n**What's wrong:**\ncopy-paste mistake, sorts by price instead of rating\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Bug #013: issue in app.py (line ~120)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 120\n\n**What's wrong:**\noff-by-one in the slice start, so page 2 skips the last item of page 1 instead of\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Bug #014: issue in app.py (line ~151)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 151\n\n**What's wrong:**\nno handling for product being None, template will crash on missing product\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Bug #015: issue in app.py (line ~166)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 166\n\n**What's wrong:**\nrequires exact full match instead of substring search\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Bug #016: issue in app.py (line ~174)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 174\n\n**What's wrong:**\nroute only accepts GET, but the product page form submits POST, so this silently 405s\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Bug #017: issue in app.py (line ~177)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 177\n\n**What's wrong:**\nuses > instead of >=, so an 11th distinct item can still be added when the cart should\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Bug #018: issue in app.py (line ~181)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 181\n\n**What's wrong:**\nqty stays a string here, never converted to int\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Bug #019: issue in app.py (line ~193)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 193\n\n**What's wrong:**\nno check for key existing first, raises KeyError if item already removed\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Bug #020: issue in app.py (line ~203)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 203\n\n**What's wrong:**\nallows negative quantities, never validated\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Bug #021: issue in app.py (line ~205)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 205\n\n**What's wrong:**\ndoes not remove the item when quantity is set to 0\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Bug #022: issue in app.py (line ~223)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 223\n\n**What's wrong:**\ntreats the coupon percentage as a flat rupee amount instead of a percentage of the total,\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Bug #023: issue in app.py (line ~227)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 227\n\n**What's wrong:**\ncompares to TAX_RATE (0.18) instead of GIFT_THRESHOLD (2000), so the free-gift banner\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Bug #024: issue in app.py (line ~252)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 252\n\n**What's wrong:**\nclears the wishlist instead of the cart, so \"Clear Cart\" visibly does nothing to the cart\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Bug #025: issue in app.py (line ~261)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 261\n\n**What's wrong:**\ntax rate applied as if it were a percentage already (multiplies by 18 instead of 0.18)\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Bug #026: issue in app.py (line ~264)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 264\n\n**What's wrong:**\nboundary uses > instead of >=, so spending exactly the threshold still charges shipping\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Bug #027: issue in app.py (line ~270)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 270\n\n**What's wrong:**\ncart is never cleared after checkout completes\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Bug #028: issue in app.py (line ~287)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 287\n\n**What's wrong:**\nalways appends, never checks if the product is already in the wishlist, so it never toggles off\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Bug #029: issue in app.py (line ~297)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 297\n\n**What's wrong:**\ntypo compares against \"Stationary\" (wrong spelling) so Stationery products never match\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Bug #030: issue in app.py (line ~314)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 314\n\n**What's wrong:**\nfind() returns -1 which is truthy, so this check never actually catches a missing \"@\"\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Bug #031: issue in app.py (line ~330)",
+    "body": "**File:** `app.py`\n**Roughly around line:** 330\n\n**What's wrong:**\nsuccess is set to True unconditionally, so the \"Subscribed!\" message shows even when\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "backend",
+      "intermediate"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Bug #032: issue in style.css (line ~9)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 9\n\n**What's wrong:**\ncolor value is invalid (missing #), text renders as default black instead of dark gray\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Bug #033: issue in style.css (line ~20)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 20\n\n**What's wrong:**\nproperty name typo, should be \"color\", so navbar text stays default black on dark background (unreadable)\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Bug #034: issue in style.css (line ~34)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 34\n\n**What's wrong:**\nflex-grow with no basis causes the search bar to overflow on small screens\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Bug #035: issue in style.css (line ~52)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 52\n\n**What's wrong:**\nthis rule targets \".cart-badge\" but the template actually uses class \"cart-badg\" (typo), so styling never applies\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Bug #036: issue in style.css (line ~64)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 64\n\n**What's wrong:**\nmargin shorthand missing a value, only sets top/bottom, left/right stay 0 instead of \"auto\" centering\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Bug #037: issue in style.css (line ~90)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 90\n\n**What's wrong:**\nfixed 4-column grid with no minmax/auto-fit, breaks completely on narrower screens\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Bug #038: issue in style.css (line ~99)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 99\n\n**What's wrong:**\nbox-shadow value missing blur radius unit, invalid CSS, so shadow never renders\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Bug #039: issue in style.css (line ~109)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 109\n\n**What's wrong:**\noverflow not set to hidden, oversized images spill outside the card\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Bug #040: issue in style.css (line ~114)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 114\n\n**What's wrong:**\nmax-height missing entirely, tall images blow out the fixed-height wrapper\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Bug #041: issue in style.css (line ~120)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 120\n\n**What's wrong:**\ncolor value uses an unsupported CSS4 named color that most rendering falls back on weirdly, appears washed out\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Bug #042: issue in style.css (line ~142)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 142\n\n**What's wrong:**\ntemplate uses class \"out-of-stok\" (typo) but this rule is named \"out-of-stock\", so it never applies and looks identical to in-stock\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Bug #043: issue in style.css (line ~158)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 158\n\n**What's wrong:**\nno border-radius or object-fit, non-square images get squished\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Bug #044: issue in style.css (line ~165)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 165\n\n**What's wrong:**\nfont-weight value is invalid (\"900px\" instead of a numeric weight), rule gets ignored entirely\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Bug #045: issue in style.css (line ~192)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 192\n\n**What's wrong:**\nhover state uses the same color as the default state, so there's no visible hover feedback\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Bug #046: issue in style.css (line ~204)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 204\n\n**What's wrong:**\ndisplay:block with no margin auto and no width constraint pushes button to fill the whole row oddly\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Bug #047: issue in style.css (line ~216)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 216\n\n**What's wrong:**\nlist-style not reset, bullets still show even though design intends a clean list\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Bug #048: issue in style.css (line ~224)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 224\n\n**What's wrong:**\nborder-collapse missing, double borders appear between table cells\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Bug #049: issue in style.css (line ~242)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 242\n\n**What's wrong:**\nborder-radius applied as a percentage without matching width/height ratio adjustments, buttons render as ovals not circles\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Bug #050: issue in style.css (line ~248)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 248\n\n**What's wrong:**\ntext-decoration set to none but no hover state added back, link is hard to identify as clickable\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Bug #051: issue in style.css (line ~299)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 299\n\n**What's wrong:**\nrule name doesn't match the class actually used in contact.html (\"error-message\" not \"error-msg\")\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Bug #052: issue in style.css (line ~324)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 324\n\n**What's wrong:**\nmissing margin-top, footer sits flush against content with no breathing room\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Bug #053: issue in style.css (line ~332)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 332\n\n**What's wrong:**\nno responsive breakpoint at all in the whole stylesheet, product grid stays 4 columns on mobile\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Bug #054: issue in style.css (line ~335)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 335\n\n**What's wrong:**\ncolor is nearly identical to the background, count is technically there but unreadable\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Bug #055: issue in style.css (line ~346)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 346\n\n**What's wrong:**\nmargin-left missing, badge text runs straight into the price with no gap\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Bug #056: issue in style.css (line ~352)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 352\n\n**What's wrong:**\nmargin-top missing while .badge already has one above, so this badge overlaps the in-stock badge instead of stacking below it\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 57,
+    "title": "Bug #057: issue in style.css (line ~360)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 360\n\n**What's wrong:**\nletter-spacing negative value overlaps the star characters, making the count unreadable\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Bug #058: issue in style.css (line ~380)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 380\n\n**What's wrong:**\nno :hover or :visited style, all pagination links look identical whether visited or not, hard to tell they're clickable\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Bug #059: issue in style.css (line ~390)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 390\n\n**What's wrong:**\noverflow-x not set, on small screens the strip just squishes every item instead of scrolling horizontally\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 60,
+    "title": "Bug #060: issue in style.css (line ~403)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 403\n\n**What's wrong:**\nobject-fit missing, non-square thumbnails stretch instead of cropping cleanly\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 61,
+    "title": "Bug #061: issue in style.css (line ~438)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 438\n\n**What's wrong:**\nno hover/focus style at all, and color is very close to the page background, link is very hard to notice\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Bug #062: issue in style.css (line ~477)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 477\n\n**What's wrong:**\nopacity/visibility never actually hides this by default, \"visible\" class from the JS has no real effect since this is always shown\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 63,
+    "title": "Bug #063: issue in style.css (line ~493)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 493\n\n**What's wrong:**\nno width set, input shrinks to almost nothing on narrow screens\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 64,
+    "title": "Bug #064: issue in style.css (line ~505)",
+    "body": "**File:** `static/css/style.css`\n**Roughly around line:** 505\n\n**What's wrong:**\ntext color left as the default dark badge text color, so \"Bestseller\" is nearly invisible on the dark background\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 65,
+    "title": "Bug #065: issue in cart.js (line ~3)",
+    "body": "**File:** `static/js/cart.js`\n**Roughly around line:** 3\n\n**What's wrong:**\ndelta is always passed as 1 from both buttons in cart.html (that's a template bug),\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Bug #066: issue in cart.js (line ~11)",
+    "body": "**File:** `static/js/cart.js`\n**Roughly around line:** 11\n\n**What's wrong:**\nbuilds the URL with string concatenation but forgets the \"?qty=\" query param entirely\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 67,
+    "title": "Bug #067: issue in cart.js (line ~19)",
+    "body": "**File:** `static/js/cart.js`\n**Roughly around line:** 19\n\n**What's wrong:**\nreads textContent as a number but never checks for NaN if badge is empty\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 68,
+    "title": "Bug #068: issue in cart.js (line ~27)",
+    "body": "**File:** `static/js/cart.js`\n**Roughly around line:** 27\n\n**What's wrong:**\nreturn value of confirm() is never used, so clicking cancel still navigates away and removes the item\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 69,
+    "title": "Bug #069: issue in main.js (line ~3)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 3\n\n**What's wrong:**\ntoLocaleString call is missing, so this just returns the raw number with no comma formatting\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 70,
+    "title": "Bug #070: issue in main.js (line ~12)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 12\n\n**What's wrong:**\ncompares link.href (a full absolute URL) directly to path (just the pathname), so this never matches\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 71,
+    "title": "Bug #071: issue in main.js (line ~28)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 28\n\n**What's wrong:**\nuses \"=\" (assignment) instead of \"===\" (comparison), always evaluates truthy and never blocks submit\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 72,
+    "title": "Bug #072: issue in main.js (line ~34)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 34\n\n**What's wrong:**\nmissing \"@\" check entirely, only checks length, so \"notanemail\" passes validation\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 73,
+    "title": "Bug #073: issue in main.js (line ~48)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 48\n\n**What's wrong:**\nsetTimeout duration is a string instead of a number, some browsers coerce it but it's brittle and inconsistent\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 74,
+    "title": "Bug #074: issue in main.js (line ~64)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 64\n\n**What's wrong:**\nnull check missing, throws if a card is missing a title element and stops the whole loop\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 75,
+    "title": "Bug #075: issue in main.js (line ~77)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 77\n\n**What's wrong:**\ntoggles a class named \"nav-open\" on the button itself instead of on the <nav> element,\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 76,
+    "title": "Bug #076: issue in main.js (line ~88)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 88\n\n**What's wrong:**\ntoggles the class on <body>, but the CSS dark-mode variables are actually scoped to\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 77,
+    "title": "Bug #077: issue in main.js (line ~100)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 100\n\n**What's wrong:**\ncondition is backwards (should show the button once scrolled PAST 300px, not only\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 78,
+    "title": "Bug #078: issue in main.js (line ~126)",
+    "body": "**File:** `static/js/main.js`\n**Roughly around line:** 126\n\n**What's wrong:**\nincrements instead of decrementing, \"-\" button behaves exactly like \"+\"\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 79,
+    "title": "Bug #079: issue in 404.html (line ~12)",
+    "body": "**File:** `templates/404.html`\n**Roughly around line:** 12\n\n**What's wrong:**\nhardcoded href with a typo, \"/hom\" instead of \"/\", so the \"go home\" link 404s too\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 80,
+    "title": "Bug #080: issue in base.html (line ~13)",
+    "body": "**File:** `templates/base.html`\n**Roughly around line:** 13\n\n**What's wrong:**\ninput name doesn't match what the /search route reads (route reads \"q\", this sends \"query\")\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 81,
+    "title": "Bug #081: issue in base.html (line ~21)",
+    "body": "**File:** `templates/base.html`\n**Roughly around line:** 21\n\n**What's wrong:**\nclass name typo means the badge never gets the styled-circle CSS applied\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 82,
+    "title": "Bug #082: issue in cart.html (line ~25)",
+    "body": "**File:** `templates/cart.html`\n**Roughly around line:** 25\n\n**What's wrong:**\nquantity buttons both call the same increase function, decrease never actually decreases\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 83,
+    "title": "Bug #083: issue in cart.html (line ~30)",
+    "body": "**File:** `templates/cart.html`\n**Roughly around line:** 30\n\n**What's wrong:**\nmultiplies price by qty in the template, but qty is a string from the session, so this concatenates instead of multiplying\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 84,
+    "title": "Bug #084: issue in cart.html (line ~39)",
+    "body": "**File:** `templates/cart.html`\n**Roughly around line:** 39\n\n**What's wrong:**\ninput missing the \"name\" attribute, so the typed code is never actually sent to the server\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 85,
+    "title": "Bug #085: issue in cart.html (line ~48)",
+    "body": "**File:** `templates/cart.html`\n**Roughly around line:** 48\n\n**What's wrong:**\nbanner markup is correct, but it never renders because gift_unlocked is essentially always False (see app.py)\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 86,
+    "title": "Bug #086: issue in cart.html (line ~55)",
+    "body": "**File:** `templates/cart.html`\n**Roughly around line:** 55\n\n**What's wrong:**\nmessage says \"more\" but doesn't actually compute or show the remaining amount needed\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 87,
+    "title": "Bug #087: issue in checkout.html (line ~8)",
+    "body": "**File:** `templates/checkout.html`\n**Roughly around line:** 8\n\n**What's wrong:**\nlink text says \"Continue Shopping\" but points at the cart page instead of the homepage\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 88,
+    "title": "Bug #088: issue in checkout.html (line ~23)",
+    "body": "**File:** `templates/checkout.html`\n**Roughly around line:** 23\n\n**What's wrong:**\ntextarea missing the \"name\" attribute so its value is never submitted to the server\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 89,
+    "title": "Bug #089: issue in contact.html (line ~10)",
+    "body": "**File:** `templates/contact.html`\n**Roughly around line:** 10\n\n**What's wrong:**\nwrong CSS class name means the error text never gets the red error styling\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 90,
+    "title": "Bug #090: issue in contact.html (line ~21)",
+    "body": "**File:** `templates/contact.html`\n**Roughly around line:** 21\n\n**What's wrong:**\nbutton type is \"button\" not \"submit\", so clicking it does nothing at all\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 91,
+    "title": "Bug #091: issue in index.html (line ~8)",
+    "body": "**File:** `templates/index.html`\n**Roughly around line:** 8\n\n**What's wrong:**\ncompares selected_category to cat.lower() but selected_category is never lowercased, so this highlight never triggers\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 92,
+    "title": "Bug #092: issue in index.html (line ~19)",
+    "body": "**File:** `templates/index.html`\n**Roughly around line:** 19\n\n**What's wrong:**\nvalue sent is \"ratingg\" (typo) so this filter never matches the \"rating\" branch in app.py\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 93,
+    "title": "Bug #093: issue in index.html (line ~32)",
+    "body": "**File:** `templates/index.html`\n**Roughly around line:** 32\n\n**What's wrong:**\nwrong field name, should be product.name\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 94,
+    "title": "Bug #094: issue in index.html (line ~45)",
+    "body": "**File:** `templates/index.html`\n**Roughly around line:** 45\n\n**What's wrong:**\nthis branch can never be reached because badge class below is misspelled and unstyled, looks identical to in-stock\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 95,
+    "title": "Bug #095: issue in index.html (line ~62)",
+    "body": "**File:** `templates/index.html`\n**Roughly around line:** 62\n\n**What's wrong:**\nlink always points to page 1 instead of page - 1, so \"Previous\" from page 3 jumps straight back to page 1\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 96,
+    "title": "Bug #096: issue in index.html (line ~77)",
+    "body": "**File:** `templates/index.html`\n**Roughly around line:** 77\n\n**What's wrong:**\niterates recently_viewed directly but the list still contains duplicate/None entries from the tracking bug, so the same product can render several times in a row\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 97,
+    "title": "Bug #097: issue in product.html (line ~17)",
+    "body": "**File:** `templates/product.html`\n**Roughly around line:** 17\n\n**What's wrong:**\nrange(avg_rating|int) truncates instead of rounding, so a 4.6 average always renders as 4 filled stars, never 5\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 98,
+    "title": "Bug #098: issue in product.html (line ~27)",
+    "body": "**File:** `templates/product.html`\n**Roughly around line:** 27\n\n**What's wrong:**\nform has no method attribute, so it defaults to GET (this part is fine) but action points at the wrong endpoint name\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 99,
+    "title": "Bug #099: issue in product.html (line ~31)",
+    "body": "**File:** `templates/product.html`\n**Roughly around line:** 31\n\n**What's wrong:**\nmin is \"0\" instead of \"1\", letting people submit a zero quantity\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 100,
+    "title": "Bug #100: issue in product.html (line ~45)",
+    "body": "**File:** `templates/product.html`\n**Roughly around line:** 45\n\n**What's wrong:**\nuses the static product.rating field instead of the real review count, so this can say\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 101,
+    "title": "Bug #101: issue in search_results.html (line ~4)",
+    "body": "**File:** `templates/search_results.html`\n**Roughly around line:** 4\n\n**What's wrong:**\nshows the raw query var even when it's empty, printing \"Results for: \" with nothing useful\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  },
+  {
+    "id": 102,
+    "title": "Bug #102: issue in search_results.html (line ~8)",
+    "body": "**File:** `templates/search_results.html`\n**Roughly around line:** 8\n\n**What's wrong:**\nmessage is misleading, tells user to try a different category, but this is a search page not category filter\n\n**Task:** Find the bug in the file above, fix it, and open a PR that references this issue (e.g. `Fixes #<issue-number>`). Don't fix other bugs in the same file in this PR \u2014 one bug, one PR.\n",
+    "labels": [
+      "frontend",
+      "good-first-issue"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}{{ product.name }} - CampusCart{% endblock %}
+{% block content %}
+<div class="product-detail">
+    <div class="product-detail-image">
+        <img src="{{ url_for('static', filename='img/' + product.image) }}" alt="{{ product.name }}">
+    </div>
+    <div class="product-detail-info">
+        <h1>{{ product.name }}</h1>
+        <p class="price">
+            Rs. {{ product.price }}
+            {% if product.on_sale %}<span class="savings-badge">You save Rs. {{ savings }}</span>{% endif %}
+        </p>
+        {% if avg_rating %}
+        <p class="stars">
+            {% for i in range(avg_rating|int) %}★{% endfor %}{% for i in range(5 - avg_rating|int) %}☆{% endfor %}
+            ({{ avg_rating }})
+        </p>
+        {% endif %}
+        <p class="desc">{{ product.desc }}</p>
+        <p class="stock-info">{{ product.stock }} left in stock</p>
+        {% if low_stock %}
+        <p class="low-stock-warning">Hurry, almost sold out!</p>
+        {% endif %}
+
+        <form action="/add-to-cart/{{ product.id }}" method="POST" class="add-to-cart-form">
+            <label for="qty">Quantity:</label>
+            <button type="button" class="qty-btn" id="qty-decrease">-</button>
+            <input type="number" id="qty" name="qty" value="1" min="0">
+            <button type="button" class="qty-btn" id="qty-increase">+</button>
+            <button type="submit" class="btn-primary">Add to Cart</button>
+        </form>
+
+        <button class="wishlist-btn" onclick="location.href='{{ url_for('toggle_wishlist', product_id=product.id) }}'">
+            ♥ Add to Wishlist
+        </button>
+    </div>
+</div>
+
+<div class="reviews-section">
+    <h2>Reviews</h2>
+         "Based on 4.2 reviews" (a rating, not a count) instead of the actual number of reviews below -->
+    <p class="review-count">Based on {{ product.rating }} reviews</p>
+    {% if reviews %}
+    <ul class="review-list">
+        {% for review in reviews %}
+        <li>"{{ review.text }}" &mdash; {{ review.rating }}/5</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="empty-state">No reviews yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Search Results - CampusCart{% endblock %}
+{% block content %}
+<h1>Results for: {{ query }}</h1>
+
+{% if results|length == 0 %}
+<p class="empty-state">No products found. Try a different category.</p>
+{% else %}
+<div class="product-grid">
+    {% for product in results %}
+    <div class="product-card">
+        <a href="{{ url_for('product_detail', product_id=product.id) }}">
+            <img src="{{ url_for('static', filename='img/' + product.image) }}" alt="{{ product.name }}" class="product-image">
+            <h3 class="product-title">{{ product.name }}</h3>
+        </a>
+        <p class="product-price">Rs. {{ product.price }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

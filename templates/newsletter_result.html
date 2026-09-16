@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Newsletter - CampusCart{% endblock %}
+{% block content %}
+<div class="newsletter-result">
+    {% if success %}
+    <h1>Subscribed!</h1>
+    <p>Thanks for signing up for deals.</p>
+    {% else %}
+    <h1>Something went wrong</h1>
+    <p>Please enter a valid email address.</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Back to shopping</a>
+</div>
+{% endblock %}

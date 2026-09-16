@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Your Cart - CampusCart{% endblock %}
+{% block content %}
+<h1>Your Cart</h1>
+
+{% if items|length == 0 %}
+<p class="empty-state">Your cart is empty.</p>
+{% else %}
+<table class="cart-table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.product.name }}</td>
+            <td>Rs. {{ item.product.price }}</td>
+            <td>
+                <button class="qty-btn" onclick="changeQty({{ item.product.id }}, {{ item.qty }}, 1)">-</button>
+                <span>{{ item.qty }}</span>
+                <button class="qty-btn" onclick="changeQty({{ item.product.id }}, {{ item.qty }}, 1)">+</button>
+            </td>
+            <td>Rs. {{ item.product.price * item.qty }}</td>
+            <td><a href="{{ url_for('remove_from_cart', product_id=item.product.id) }}" class="remove-link">Remove</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<form action="{{ url_for('apply_coupon') }}" method="POST" class="coupon-form">
+    <input type="text" placeholder="Coupon code (try STUDENT10)">
+    <button type="submit" class="btn-primary">Apply</button>
+</form>
+{% if coupon_code %}
+<p class="coupon-applied">Coupon "{{ coupon_code }}" applied: -Rs. {{ discount }}</p>
+{% endif %}
+
+{% if gift_unlocked %}
+<div class="gift-banner">🎁 You've unlocked a free gift with this order!</div>
+{% endif %}
+
+<div class="cart-summary">
+    <p>Total: Rs. {{ total }}</p>
+    {% if total < free_shipping_threshold %}
+    <p class="shipping-note">Add more items to get free shipping!</p>
+    {% endif %}
+    <a href="{{ url_for('clear_cart') }}" class="clear-cart-link">Clear Cart</a>
+    <a href="{{ url_for('checkout') }}" class="btn-primary">Proceed to Checkout</a>
+</div>
+{% endif %}
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}CampusCart{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
+        <a href="{{ url_for('index') }}" class="logo">CampusCart</a>
+        <form action="{{ url_for('search') }}" method="get" class="search-form">
+            <input type="text" name="query" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </form>
+        <nav id="main-nav">
+            <button class="dark-mode-toggle" id="dark-mode-toggle">🌙</button>
+            <a href="{{ url_for('view_cart') }}" class="cart-link">
+                Cart
+                <span class="cart-badg">{{ cart_count }}</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <form action="{{ url_for('newsletter') }}" method="POST" class="newsletter-form">
+            <label for="newsletter-email">Get deals in your inbox:</label>
+            <input type="text" id="newsletter-email" name="email" placeholder="you@example.com">
+            <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+        <p>&copy; 2026 CampusCart Club Project</p>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top">↑ Top</button>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
