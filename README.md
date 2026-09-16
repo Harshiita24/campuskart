@@ -30,10 +30,12 @@ Some of these currently work wrong. That's the point.
 ```bash
 git clone <your-fork-url>
 cd campuscart
+python3 -m venv venv <------ For Macbook users
+source venv/bin/activate  <-------- For Macbook users
 pip install -r requirements.txt
 python app.py
 ```
-
+<!-- This is a single-line comment -->
 Then open **http://127.0.0.1:5000** in your browser.
 
 ## How to work an issue
