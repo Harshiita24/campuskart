@@ -13,7 +13,7 @@
         </p>
         {% if avg_rating %}
         <p class="stars">
-            {% for i in range(avg_rating|int) %}★{% endfor %}{% for i in range(5 - avg_rating|int) %}☆{% endfor %}
+            {% for i in range(avg_rating|round|int) %}★{% endfor %}{% for i in range(5 - avg_rating|round|int) %}☆{% endfor %}
             ({{ avg_rating }})
         </p>
         {% endif %}
