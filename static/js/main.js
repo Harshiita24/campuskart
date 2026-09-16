@@ -90,7 +90,7 @@ function setupBackToTop() {
 
     window.addEventListener("scroll", function () {
         // while ABOVE it), so the button is visible at the top of the page and disappears once you scroll
-        if (window.scrollY < 300) {
+        if (window.scrollY >= 300) {
             btn.classList.add("visible");
         } else {
             btn.classList.remove("visible");

@@ -29,7 +29,7 @@
             </div>
             <h3 class="product-title">{{ product.title }}</h3>
         </a>
-        <p class="product-price">
+        <p class="product-name">
             Rs. {{ product.price }}
             {% if product.on_sale %}
             <span class="savings-badge">You save Rs. {{ savings_amount(product) }}</span>
