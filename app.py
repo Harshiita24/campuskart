@@ -63,8 +63,7 @@ def is_low_stock(product):
 def savings_amount(product):
     if not product.get("on_sale"):
         return 0
-    # so the "you saved" badge shows a negative number
-    return product["price"] - product["original_price"]
+    return product["original_price"] - product["price"]
 
 
 def category_counts():
