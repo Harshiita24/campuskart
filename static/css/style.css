@@ -359,7 +359,7 @@ body {
 
 .recently-viewed-strip {
     display: flex;
-    gap: 12px;
+    gap: 20px;
 }
 
 .rv-item {
