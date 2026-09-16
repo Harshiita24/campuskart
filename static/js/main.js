@@ -69,7 +69,7 @@ function setupNavToggle() {
     if (!toggle || !nav) return;
     toggle.addEventListener("click", function () {
         // so the CSS that's supposed to reveal the menu never actually applies to the menu
-        toggle.classList.toggle("nav-open");
+        nav.classList.toggle("nav-open");
     });
 }
 
