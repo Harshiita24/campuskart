@@ -105,8 +105,7 @@ def index():
 
     page = request.args.get("page", 1, type=int)
     total_products = len(products)
-    # continuing right where page 1 left off
-    start = page * PRODUCTS_PER_PAGE
+    start = (page - 1) * PRODUCTS_PER_PAGE
     end = start + PRODUCTS_PER_PAGE
     total_pages = (total_products + PRODUCTS_PER_PAGE - 1) // PRODUCTS_PER_PAGE
     page_products = products[start:end]
